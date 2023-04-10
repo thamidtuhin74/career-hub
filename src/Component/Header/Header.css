@@ -1,0 +1,15 @@
+nav a{
+    margin-left: 30px;
+}
+nav a:hover{
+    color: #7E90FE;
+}
+.btn-start-apply{
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+}
+.header-container{
+    background-color: #F9F9FF;
+}

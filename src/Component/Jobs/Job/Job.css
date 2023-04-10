@@ -1,0 +1,23 @@
+.single-job-wrapper{
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+}
+.remoteORfulltime{
+    align-items: flex-start;
+    padding: 9px 19px;
+    gap: 10px;
+    border: 1px solid #9873FF;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;   
+}
+.btn-view-details{
+    padding: 11px 18px;
+    gap: 10px;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 4px;
+    color: #fff;
+}

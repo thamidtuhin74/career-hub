@@ -5,7 +5,6 @@ import { Outlet } from 'react-router-dom';
 const Main = () => {
     return (
         <div>
-            Main
             <Header></Header>
             <Outlet></Outlet>
         </div>

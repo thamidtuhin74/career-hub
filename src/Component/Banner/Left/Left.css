@@ -1,0 +1,42 @@
+span{
+    color : #9477FF;
+}
+p{
+    color: #757575
+}
+.left-info-container{
+    margin-bottom: 130px;
+}
+
+.left-info-container h2{
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 100px;
+    /* or 125% */
+
+
+    /* Dark 01 */
+
+    color: #1A1919;
+}
+.left-info-container p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+
+
+    /* Dark 03 */
+
+    color: #757575;
+}
+.left-info-container .btn-start-apply{
+    height: 65px;
+    left: 300px;
+    top: 698px;
+
+    /* Linear */
+
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
+}

@@ -1,0 +1,8 @@
+.single-catagroy-wrapper{
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
+    border-radius: 8px;
+    padding: 40px;
+}
+.single-catagroy-wrapper p{
+    color: #a3a3a3;
+}

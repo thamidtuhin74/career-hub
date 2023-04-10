@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { createContext } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 import {
+  Await,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
@@ -10,7 +11,11 @@ import Main from './Component/Main/Main';
 import Home from './Component/Home/Home';
 import Blog from './Component/Blog/Blog';
 import AppliedJobs from './Component/AppliedJobs/AppliedJobs';
+import {categoryLoader } from './Loader/loadingData';
+// import {categoryLoader} from './Loader/loadingData';
 
+
+export const routerContext = createContext([]);
 
 const router = createBrowserRouter([
   {
@@ -19,7 +24,10 @@ const router = createBrowserRouter([
     children:[
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        
+        
+        loader: categoryLoader,
       },
       {
         path: '/blog',
