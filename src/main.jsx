@@ -13,6 +13,7 @@ import Blog from './Component/Blog/Blog';
 import AppliedJobs from './Component/AppliedJobs/AppliedJobs';
 import {categoryLoader } from './Loader/loadingData';
 import JobDetails from './Component/JobDetails/JobDetails';
+import Statistic from './Component/Statistic/Statistic';
 // import {categoryLoader} from './Loader/loadingData';
 
 
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
       ,
       {
         path: '/statistic',
-        element: <Blog></Blog>
+        element: <Statistic></Statistic>
       },
       {
         path: '/applied_jobs',
