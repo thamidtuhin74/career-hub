@@ -12,6 +12,7 @@ const Home = () => {
 
     const jobCatagories = useLoaderData();
     // console.log('Catagpry : '+jobCatagories);
+    
 
     return (
         <div className='Home-container'>

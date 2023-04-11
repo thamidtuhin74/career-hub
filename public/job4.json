@@ -1,0 +1,19 @@
+{
+    "id": 4,
+    "companyLogo": "/src/assets/Logo/google-1-1 1-1.png",
+    "jobTitle": "UX Designer",
+    "companyName": "Design Co.",
+    "remote": true,
+    "location": "Los Angeles, CA",
+    "employmentType": "Part-time",
+    "salary": "$60,000 - $80,000",
+    "jobDescription": " A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+    "jobResponsibilities": [" Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members."],
+    "educationalRequirements": "Bachelor's degree in Graphic Design, Human-Computer Interaction, or related field",
+    "experience": "2+ years of experience in UX design",
+    "contact": {
+      "phone": "555-555-5555",
+      "email": "jobs@abccorp.com"
+    }
+  }
+  

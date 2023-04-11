@@ -4,7 +4,6 @@ import Job from './Job/Job';
 const Jobs = () => {
 
     const [jobs, setJobs] = useState([]);
-
     useEffect(()=>{
         fetch('/public/jobs.json')
         .then(res => res.json())

@@ -1,0 +1,18 @@
+{
+    "id": 7,
+    "companyLogo": "/src/assets/Logo/tesla-9 1.png",
+    "jobTitle": "Registered Nurse",
+    "companyName": "Healthy Living",
+    "remote": false,
+    "location": "Boston, MA",
+    "employmentType": "Full-time",
+    "salary": "$70,000 - $90,000",
+    "jobDescription": " A Registered Nurse is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+    "jobResponsibilities": ["Administer medication and treatments", "Collaborate with healthcare team", "Educate patients and families on health management"],
+    "educationalRequirements": " Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+    "experience": "2+ years of experience as a registered nurse",
+    "contact": {
+      "phone": "555-555-5555",
+      "email": "jobs@healthyliving.com"
+    }
+  }
