@@ -1,13 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import './JobDetails.css'
+import { addToDb } from '../../utilities/fakedb';
 
 const JobDetails = () => {
     const job = useLoaderData();
     console.log(job);
 
+    const [appliedJobIDs, setAppliedJobID] = useState([]);
+    useEffect(()=>{
+        
+        console.log(appliedJobIDs)
+    },[appliedJobIDs]);
+    
+
     const applyNowHandler = (appliedJobId) =>{
+
         console.log(appliedJobId);
+        setAppliedJobID(appliedJobId);
+        // addToDb(appliedJobIDs);
+        // useEffect
+        
     }
 
 
@@ -21,7 +34,7 @@ const JobDetails = () => {
                 <p className='mb-6'><span className='text-lg font-bold text-black'>Experience : </span><br/>{experience}</p>
             </div>
             <div className="right">
-                <div className="right-info p-8 rounded-lg mb-6">
+                <div className="job-details-right-info p-8 rounded-lg mb-6">
                     <p className='text-lg font-bold text-black '>Job Details</p>
                     <hr className='my-6' />
                     <p><span className='text-lg font-bold text-black'>Salary : </span>{salary}</p>
