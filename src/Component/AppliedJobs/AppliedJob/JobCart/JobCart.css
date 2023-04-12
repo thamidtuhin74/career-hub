@@ -1,0 +1,10 @@
+.logo{
+    /* width: 25%; */
+    /* background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%); */
+    background: #F4F4F4;
+}
+.single-job-wrapper{
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    margin-top: 50px;
+}

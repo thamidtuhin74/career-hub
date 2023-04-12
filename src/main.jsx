@@ -14,6 +14,7 @@ import AppliedJobs from './Component/AppliedJobs/AppliedJobs';
 import {categoryLoader } from './Loader/loadingData';
 import JobDetails from './Component/JobDetails/JobDetails';
 import Statistic from './Component/Statistic/Statistic';
+import Error404 from './Component/Error404/Error404';
 // import {categoryLoader} from './Loader/loadingData';
 
 
@@ -52,7 +53,7 @@ const router = createBrowserRouter([
       },
       {
         path: '*',
-        element: <div>404 Page not Found!</div>
+        element: <Error404></Error404>
       }
 
 

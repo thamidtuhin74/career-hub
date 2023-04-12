@@ -25,16 +25,6 @@ const AppiliedJob = ({keyArray,allJobs}) => {
         })
     }
 
-    // const savedJobs = [];
-    // keyArray.map(key =>{
-
-    //     const id = parseInt(key);
-
-    //     const addedJob = allJobs.find(Job=> Job.id === id);
-    //     // console.log(addedJob);
-    //     savedJobs.push(addedJob);
-
-    // })
     console.log(savedJobs);
 
     return (
