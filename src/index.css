@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .container-wrapper{
-    width: 80%;
-    /* width: 1360px; */
+    width: 1320px;
     margin: 0px auto;
 }
+
 .btn-start-apply{
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
     font-weight: 800;
@@ -55,3 +55,12 @@ p{
     line-height: 26px;
     color:#757575
 }
+
+@media only screen and (max-device-width: 768px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .container-wrapper{
+        width: 90%;
+        margin: 0px auto;
+        
+    }
+ }

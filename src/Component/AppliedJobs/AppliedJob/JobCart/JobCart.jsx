@@ -6,8 +6,8 @@ const JobCart = ({savedJob}) => {
     const {id, companyLogo,jobTitle,companyName,remote,location,salary} = savedJob;
     
     return (
-        <div className='single-job-wrapper flex justify-between items-center p-8'>
-            <div className='flex items-center'>
+        <div className='single-job-wrapper flex md:justify-between items-center p-8'>
+            <div className='single-job-info-wrap flex items-center'>
                 <div className="companyLogo mr-6 px-12 py-24 rounded-lg">
                     <img src={companyLogo} alt="" />
                 </div>

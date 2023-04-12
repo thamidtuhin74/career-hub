@@ -26,7 +26,7 @@ const JobDetails = () => {
 
 
     return (
-        <div className='container-wrapper  grid grid-cols-3 gap-6 py-32'>
+        <div className='container-wrapper  grid md:grid-cols-3 gap-6 py-32'>
             <div className="left col-span-2">
                 <p className='mb-6'><span className='text-lg font-bold text-black'>Job Description : </span>{jobDescription}</p>
                 <p className='mb-6'><span className='text-lg font-bold text-black pb-6 '>Job Responsibilities : </span>{jobResponsibilities}</p>

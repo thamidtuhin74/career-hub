@@ -8,8 +8,8 @@ const Header = () => {
     // const [bars4 , setBars4] = useState(true);
     
     return (
-        <div className="header-container">
-            <div className='container-wrapper flex justify-between pt-0 items-center w-full'>
+        <div className="header-container pt-5">
+            <div className='container-wrapper header-container-wrapper flex justify-between pt-0 items-center w-full'>
                 <div className="logo ">
                     <Link to='/'><img className='h-16' src="/public/CPtutors-bg.png" alt="" /></Link>
                 </div>
@@ -18,7 +18,6 @@ const Header = () => {
                     <Link to="/statistic">Statistic</Link>
                     <Link to="/applied_jobs">Applied Jobs</Link>
                     <Link to="/blog">Blog</Link>
-                    <Link to={`/job_details/`}>Jon Details</Link>
 
                 </nav>
                 <a href='#jobs'>

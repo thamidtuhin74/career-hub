@@ -40,3 +40,11 @@ p{
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
     border-radius: 8px;
 }
+@media only screen and (max-device-width: 768px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .left-info-container h2{
+        font-size: 60px;
+        
+        line-height: 80px;
+    }
+ }

@@ -1,5 +1,7 @@
 .companyLogo{
-    width: 40%;
+    /* width: 40%; */
+    width: 220px;
+
     /* background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%); */
     background: #F4F4F4;
 }
@@ -8,3 +10,14 @@
     border-radius: 8px;
     margin-top: 50px;
 }
+@media only screen and (max-device-width: 768px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .single-job-wrapper{
+        flex-direction: column;
+    }
+    .single-job-info-wrap{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+ }

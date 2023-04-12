@@ -8,7 +8,7 @@ const AppliedJobs = () => {
     const allJobs = useLoaderData();
     console.log('All data are here : ' + allJobs);
     //getting appliedJobs
-    const storedJobs = localStorage.getItem('shopping-Cart');
+    const storedJobs = localStorage.getItem('applied-job');
     const CstoredJob = JSON.parse(storedJobs);
 
     if(!CstoredJob){
