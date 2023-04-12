@@ -21,9 +21,11 @@ const Header = () => {
                     <Link to={`/job_details/`}>Jon Details</Link>
 
                 </nav>
-                <button className='btn-start-apply rounded-md px-7 py-4 text-white'>
-                    Start Apply
-                </button>
+                <a href='#jobs'>
+                    <button className='btn-start-apply rounded-md px-7 py-4 text-white'>
+                        Start Apply
+                    </button>
+                </a>
             </div>
         </div>
     );

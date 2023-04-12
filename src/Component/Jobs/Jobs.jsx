@@ -12,7 +12,7 @@ const Jobs = () => {
 
 
     return (
-        <div className='container-wrapper pb-32'>
+        <div className='container-wrapper pb-32' id='jobs'>
             <h2 className='title'>Featured Jobs</h2>
             <p className='title-description pt-4 pb-8'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
