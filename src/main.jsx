@@ -1,68 +1,83 @@
-import React, { createContext } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 import {
-  Await,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Main from './Component/Main/Main';
-import Home from './Component/Home/Home';
-import Blog from './Component/Blog/Blog';
-import AppliedJobs from './Component/AppliedJobs/AppliedJobs';
-import {categoryLoader } from './Loader/loadingData';
-import JobDetails from './Component/JobDetails/JobDetails';
-import Statistic from './Component/Statistic/Statistic';
-import Error404 from './Component/Error404/Error404';
-// import {categoryLoader} from './Loader/loadingData';
 
+import Home from './Components/Home/Home';
+import Statistics from './Components/Statistics/Statistics';
+import AppliedJob from './Components/AppliedJob.jsx/AppliedJob';
+import Blog from './Components/Blog/Blog';
 
-export const routerContext = createContext([]);
-
+import JobCatagories from './Components/JobCatagoriesList/JobCatagories';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
+import FeaturesJob from './Components/FeaturesJob/FeaturesJob';
+import JobDetails from './Components/JobDetails/JobDetails';
+import AppliedJobDetails from './Components/AppliedJobDetails/AppliedJobDetails';
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Main></Main>,
-    children:[
-      {
-        path: '/',
-        element: <Home></Home>,
-        
-        
-        loader: categoryLoader,
-      },
-      {
-        path: '/blog',
-        element: <Blog></Blog>
-      }
-      ,
-      {
-        path: '/statistic',
-        element: <Statistic></Statistic>
-      },
-      {
-        path: '/applied_jobs',
-        element: <AppliedJobs></AppliedJobs>,
-        loader: ()=> fetch('/public/jobs.json')
-      },
-      {
-        path: '/job_details/:jobID',
-        element: <JobDetails></JobDetails>,
-        loader: ({params})=> fetch(`/public/job${params.jobID}.json`)
-      },
-      {
-        path: '*',
-        element: <Error404></Error404>
-      }
+    'path': '/',
+    "element":<Home></Home>,
+    errorElement: <ErrorPage></ErrorPage>,
+    "children":
+      [
+        {
+          path:'/',
+          element:<JobCatagories></JobCatagories>,
+          loader:()=>fetch('/jobCatagories.json'),
+          
+          
+        },
+        {
+          path:'JobDetails/:JobDetailsID',
+          element:<JobDetails></JobDetails>,
+          // loader:({params})=>console.log(params.JobDetailsID),
+          loader:({params})=>fetch('/featuresjJob.json')
+        },
+        {
+          path:'/statistics',
+          element:<Statistics></Statistics>
+        },
+        {
+          path:'/appliedJob',
+          element:<AppliedJob></AppliedJob>,
+          loader:({params})=>fetch('/featuresjJob.json')
+        },{
+          path:'/appliedJob/:JobDetailsID',
+          element:<AppliedJobDetails></AppliedJobDetails>,
+          loader:({params})=>fetch('/featuresjJob.json')
+        },
 
+        {
+          path:'/blog',
+          element:<Blog></Blog>
+        },
 
-    ],
+      ],
+      
+
   },
+
+  {
+    path:'/appliedJob',
+    element:<AppliedJob></AppliedJob>
+  },
+  {
+    path:'/blog',
+    element:<Blog></Blog>
+  }
+
+
+
 ]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+
     <RouterProvider router={router} />
   </React.StrictMode>,
 )

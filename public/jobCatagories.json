@@ -1,0 +1,26 @@
+[
+    {
+      "id": "6432eb0012dd7aed9680d0d8",
+      "picture": "https://img.freepik.com/free-photo/business-financial-management-document-icon_53876-14639.jpg?size=626&ext=jpg&ga=GA1.2.2058491303.1681057205&semt=ais",
+      "jobs_available": 100,
+      "job_catagory": "Account & Finance"
+    },
+    {
+      "id": "6432eb00351489644f557a80",
+      "picture": "https://img.freepik.com/free-photo/realistic-camera-lens-target-perfect-shoot-3d-rendering_460848-10717.jpg?size=626&ext=jpg&ga=GA1.1.2058491303.1681057205&semt=ais",
+      "jobs_available": 160,
+      "job_catagory": "Creative Design"
+    },
+    {
+      "id": "6432eb00bd0dbda90c54abdf",
+      "picture": "https://img.freepik.com/free-photo/black-friday-sale-tags-white-frame_23-2148285105.jpg?size=626&ext=jpg&ga=GA1.2.2058491303.1681057205&semt=ais",
+      "jobs_available": 300,
+      "job_catagory": "Marketing & Sales"
+    },
+    {
+      "id": "6432eb00e5175dcd2d12f5d1",
+      "picture": "https://img.freepik.com/free-photo/worker-with-screwdrive_1401-3.jpg?size=626&ext=jpg&ga=GA1.2.2058491303.1681057205&semt=ais",
+      "jobs_available": 190,
+      "job_catagory": "Engineering Job"
+    }
+  ]
