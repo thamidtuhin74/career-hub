@@ -14,30 +14,34 @@ const AppliedJobs = () => {
     if(!CstoredJob){
         console.log('Epmty Array');
     }
-    const objectArray = Object.entries(CstoredJob);//singel object
+    // const objectArray = Object.entries(CstoredJob);//singel object
     const keyArray = [];
 
-    objectArray.forEach(([key, value]) => {
-    keyArray.push(key); 
-    });
-    console.log(keyArray); 1
+    // handling Error : Cannot convert undefined or null to object
 
-    const appliedJob = [];
-    for(const id in allJobs){
-        const addedJob = allJobs.reduce(Job=>allJobs.id===id);
-        if(addedJob){
-            appliedJob.push(addedJob);
-        }
+    if(CstoredJob){
+        const objectArray = Object.entries(CstoredJob);
+        objectArray.forEach(([key, value]) => {
+            keyArray.push(key); 
+            });
+            console.log(keyArray); 
+        
+            const appliedJob = [];
+            for(const id in allJobs){
+                const addedJob = allJobs.reduce(Job=>allJobs.id===id);
+                if(addedJob){
+                    appliedJob.push(addedJob);
+                }
+            }
+            console.log('appliedJob : '+appliedJob);
     }
-    console.log('appliedJob : '+appliedJob);
+
     
 
 
     return (
         <div className='container-wrapper'>
-            {
-                // keyArray.map(id => <AppiliedJob key={id} id = {id} allJobs = {allJobs}></AppiliedJob>)
-            }
+
             <AppiliedJob 
             key={allJobs.id} 
             keyArray = {keyArray}

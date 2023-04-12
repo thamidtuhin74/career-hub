@@ -6,10 +6,15 @@ const AppiliedJob = ({keyArray,allJobs}) => {
     const jobId = keyArray;
     console.log(allJobs);
     // console.log(typeof(jobId));
-    console.log(keyArray);
 
     const savedJobs = [];
-    keyArray.map(key =>{
+
+    console.log(keyArray);
+    if(keyArray.length === 0){
+
+    }
+    else{
+        keyArray.map(key =>{
 
         const id = parseInt(key);
 
@@ -17,7 +22,19 @@ const AppiliedJob = ({keyArray,allJobs}) => {
         // console.log(addedJob);
         savedJobs.push(addedJob);
 
-    })
+        })
+    }
+
+    // const savedJobs = [];
+    // keyArray.map(key =>{
+
+    //     const id = parseInt(key);
+
+    //     const addedJob = allJobs.find(Job=> Job.id === id);
+    //     // console.log(addedJob);
+    //     savedJobs.push(addedJob);
+
+    // })
     console.log(savedJobs);
 
     return (
