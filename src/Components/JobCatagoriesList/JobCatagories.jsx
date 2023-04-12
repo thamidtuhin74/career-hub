@@ -23,7 +23,7 @@ const JobCatagories = () => {
 
   
     return (
-        <div>
+        <div className='container-wrapper'>
             <section>
             <div className='md:flex mx-10 my-10'>
                 <div>
@@ -41,7 +41,7 @@ const JobCatagories = () => {
                 <p className='text-center text-5xl font-bold'>Job Category List</p>
                 <p className='text-center text-2xl mt-2 mb-2'>Looking for work? Find Publications jobs.Create free email alerts and never miss another career opportunity again.</p>
             </section>
-        <div className='grid gap-6 lg:grid-cols-4 sm:grid-cols-2 '>  
+        <div className='container-wrapper grid gap-6 lg:grid-cols-4 sm:grid-cols-2 '>  
         {
             jobCatagories.map((singleCatagories)=> <SingleCatagory key={singleCatagories.id}singleCatagories={singleCatagories}></SingleCatagory>
             )

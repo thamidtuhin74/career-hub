@@ -6,7 +6,7 @@ import { CurrencyDollarIcon,MapPinIcon } from '@heroicons/react/24/solid'
 const SingleFeatureJob = ({Features}) => {
     const {id,image,company_name,salary,location,job_title,job_description,job_responsibility,educational_requirement,job_experience,job_type,Remote_or_Onsite}=Features
     return (
-        <div className='border-solid border-2 border-sky-500 p-2'>
+        <div className='border-solid border-2 border-gray-300 p-2 rounded-lg'>
             <img src={image} alt="" className='object-cover h-56 w-56' />
             <p className='text-2xl'>{job_title}</p>
             <p className='text-2xl mt-1 text-slate-400'>{company_name}</p>

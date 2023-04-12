@@ -16,11 +16,11 @@ const JobDetails = () => {
         
     }
     return (
-        <div>
-            <div className=' flex items-center justify-center p-20 text-5xl bg-slate-200'>
+        <div className='container-wrapper'>
+            <div className='w-full flex items-center justify-center p-20 text-5xl bg-slate-200'>
                 <p >Job Detaails</p>
             </div>
-            <div className='grid md:grid-cols-3 gap-4  mx-40  mt-5'>
+            <div className='grid md:grid-cols-3 gap-4  lg:mx-40  mt-5'>
 
                 <div className='col-span-2'>
                     <p> <span className='font-bold' >Job Description:</span>  {SingleJobDetails.job_description}</p>

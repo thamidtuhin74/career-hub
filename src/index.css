@@ -3,4 +3,24 @@
 @tailwind utilities;
 
 
-
+.container-wrapper{
+    width: 1320px;
+    margin: 0px auto;
+}
+@media only screen and (max-device-width: 768px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .container-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .container-wrapper{
+        width: 90%;
+    }
+ }

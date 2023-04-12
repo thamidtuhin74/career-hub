@@ -7,7 +7,7 @@ const SingleCatagory = (props) => {
 
     return (
         <div>
-            <div className=' bg-blue-500 mt-4 '>
+            <div className='bg-gray-300 mt-4 rounded-lg'>
                 <img src={picture} alt="" className='h-20 w-20 pl-6 pt-4' />
                 <p className='pl-6 mt-2 text-3xl'>{job_catagory}</p>
                 <p className='pl-6 mt-2 text-2xl pb-4'>{jobs_available} jobs available</p>
