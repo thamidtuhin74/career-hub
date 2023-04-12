@@ -38,7 +38,7 @@ const JobDetails = () => {
                     <p><span className='font-bold'>Phone :</span>{SingleJobDetails.phone}</p>
                     <p><span className='font-bold'>Email :</span>{SingleJobDetails.email}</p>
                     <p><span className='font-bold'>Address</span>:{SingleJobDetails.address}</p>
-                    <p onClick={()=>appliedForJobs(id)}><Link><button  className='btn btn-primary'>Apply Now</button></Link></p> 
+                    <p onClick={()=>appliedForJobs(id)}><Link to='/appliedJob'><button  className='btn btn-primary'>Apply Now</button></Link></p> 
                 </div>
 
             </div>
