@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { getShoppingCart } from '../../utilities/fakedb';
+import AppiliedJob from './AppliedJob/AppiliedJob';
 
 const AppliedJobs = () => {
 
@@ -8,24 +9,41 @@ const AppliedJobs = () => {
     console.log('All data are here : ' + allJobs);
 
     const storedJobs = localStorage.getItem('shopping-Cart');
-    console.log('allready stored  jobs : '+ storedJobs);
+    const CstoredJob = JSON.parse(storedJobs);
+
+    const objectArray = Object.entries(CstoredJob);//singel object
+    const keyArray = [];
+
+    objectArray.forEach(([key, value]) => {
+    keyArray.push(key); 
+    });
+    console.log(keyArray); // 1
+
+    const appliedJob = [];
+    for(const id in allJobs){
+        const addedJob = allJobs.find(Job=>allJobs.id===id);
+        if(addedJob){
+            appliedJob.push(addedJob);
+        }
+    }
+    console.log('appliedJob : '+appliedJob);
     
-    const appliedJobs = getShoppingCart()
-    console.log('allready applied  jobs : '+ storedJobs);
-    // const arrayID = [];
-    const [arrayID, setArrayId] = useState([]);
+
     
-    // for (let key of appliedJobs) {
-        
-    //     setArrayId(appliedJobs[key]);
-    // }
-    console.log('keys : '+arrayID);
+    // const appliedJobs = getShoppingCart()
+    // console.log('allready applied  jobs : '+ appliedJobs);
+    
+    // const arrayID = [...storedJobs];
+    
+    // console.log('ArrayId  : '+arrayID);
+
 
     return (
         <div className='container-wrapper'>
             {
-                // console.log()
+                keyArray.map(id => <AppiliedJob key={id} id = {id} allJobs = {allJobs}></AppiliedJob>)
             }
+            {/* <AppiliedJob ></AppiliedJob> */}
         </div>
     );
 };
